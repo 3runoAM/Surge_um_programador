@@ -1,5 +1,15 @@
 """
 EXERCÍCIOS:
+1. UMA FUNÇÃO QUE EXIBE UMA SAUDAÇÃO COM OS PARÂMETROS: SAUDACAO E NOME.
+2. UMA FUNÇÃO QUE RECEBE 3 NUMEROS COMO PARÂMETROS E EXIBA A SOMA ENTRE ELES.
+3. UMA FUNÇÃO QUE RECEBE 2 NUMEROS. O PRIMEIRO É UM VALOR O OUTRO É UM PERCENTUAL,
+ENTÃORETORNA O VALOR DO PRIMEIRO NUMERO SOMADO AO AUMENTO DO PERCENTUAL DO MESMO.
+4. UMA FUNÇÃO QUE RECEBE UM NUMERO QUALQUER COMO PARÂMETRO, SE O PARÂMETRO FOR
+DIVISIVEL POR TRÊS ELA DEVE RETORNAR FIZZ, SE O PARÂMETRO DA FUNÇÃO FOR DIVISIVEL
+POR CINCO ELA DEVE RETORNAR BUZZ, SE FOR DIVISIVEL POR TRÊS E POR CINCO DEVE RETORNAR FIZZBUZZ.
+CASO CONTRÁRIO, DEVE RETORNAR O NÚMERO USADO COMP PARÂMETRO.
+5.Uma função1 que recebe outra função2 como parâmetro e retorne o valor da função2 executada. Faça
+a função 1 executar duas funções que recebam um número diferente de argumentos.
 """
 
 # 1.
@@ -48,3 +58,20 @@ print(numero(30))
 print(numero(10))
 print(numero(1))
 print(numero(5))
+
+# 5.
+
+
+def masterfunc(func, funcao):
+    return print(func * funcao)
+
+
+def func1(n1, n2):
+    return n1 * n2
+
+
+def func2(p1, p2, p3, p4):
+    return p1 + p2 - p3 * p4
+
+
+masterfunc(func2(120, 120, 100, 2), func1(100, 5))
