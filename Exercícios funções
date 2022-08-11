@@ -1,0 +1,50 @@
+"""
+EXERCÍCIOS:
+"""
+
+# 1.
+
+
+def mensagem(saudacao='Ola', nome='Usuário!'):
+    print(saudacao, nome)
+
+
+mensagem('Eai', 'Bruno')
+
+# 2.
+
+
+def numeros(n1, n2, n3):
+    soma = n1 + n2 + n3
+    print(soma)
+
+
+numeros(45, 22, 85)
+
+# 3.
+
+
+def percentual(porcentagem, numero):
+    return numero + (porcentagem // 100 * numero)
+
+
+var = percentual(100, 15)
+print(var)
+
+# 4.
+
+
+def numero(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FIZZBUZZ'
+    if n % 3 == 0:
+        return 'FIZZ'
+    if n % 5 == 0:
+        return 'BUZZ'
+    return n
+
+
+print(numero(30))
+print(numero(10))
+print(numero(1))
+print(numero(5))
