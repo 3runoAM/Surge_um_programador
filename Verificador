@@ -1,0 +1,9 @@
+nome = input("Qual o nome seu nome? ")
+idade = input("Qual a sua idade? ")
+
+idade_menor = 18
+idade_maior = 60
+idade = int(idade)
+
+print(f'{nome} pode pegar um emprestimo.') if idade_menor <= idade <= idade_maior else print(
+    f'{nome} não pode pegar o emprestimo.')
