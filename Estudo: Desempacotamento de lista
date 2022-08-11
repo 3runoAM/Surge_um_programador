@@ -1,0 +1,41 @@
+"""
+Desempacotamento de listas em python
+"""
+# # Desempacotar uma lista significa transferir todos seus valores para variáveis.
+# # É necessário ter o mesmo número de variáveis que de valores na lista.
+nomes = ['Victor', 'Theo', 'Emma']
+n1, n2, n3 = nomes
+print(n1)
+
+# Caso o desempacotamento utilize menos variáveis que os valores da lista um erro pode acontecer.
+# (Too many values to unpack)
+# Se faz necessário criar uma última variável que deve acompanhar um asterisco (*)
+# assim o interpretador do python criará outra lista que receberá todos os valores que não possuem uma variável.
+nomes = ['Victor', 'Theo', 'Emma', 'David', 'Arthur', 'Nandor']
+n1, n2, n3, *outros_n = nomes
+print(n1)
+print(n2)
+print(n3)
+print(outros_n)
+
+# Para transferir o último valor da lista para uma variável, mantendo os nomes da lista criada pelo asterisco,
+# podemos adicionar outra variável após a que contém o asterisco. Assim mantemos os valores já
+# desempacotados, a segunda lista criada pelo asterisco+variável e desempacotamos o último valor
+
+nomes = ['Victor', 'Theo', 'Emma', 'David', 'Arthur', 'Nandor']
+n1, n2, n3, *outros_n, ultimo_n = nomes
+print(n1)
+print(n2)
+print(n3)
+print(outros_n)
+print(ultimo_n)
+
+# # Para desempacotar os últimos valores da lista mantendo os primeiros colocamos o asterisco+variável no começo e
+# # atribuímos variáveis para os valores restantes
+
+nomes = ['Victor', 'Theo', 'Emma', 'David', 'Arthur', 'Nandor']
+*outros_n, n1, n2, n3 = nomes
+print(outros_n)
+print(n1)
+print(n2)
+print(n3)
