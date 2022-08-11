@@ -11,7 +11,7 @@ if nota1.isdigit() and nota2.isdigit():  # Checa se o que foi inserido são núm
     nota3 = int(nota3)
     media = (nota1 + nota2 + nota3) / 2  # Decisão: Calculo feito baseado nas notas e que decide se o aluno é
     # aprovado ou não.
-    if media >= 6:  # Sea média dele for maior que 6.
+    if media >= 6:  # Sea média dele for maior ou igual que 6.
         print(aprovado)  # Mostra a mensagem de aprovado
     else:  # se não 
         print(reprovado)  # Mostra mensagem de reprovado
