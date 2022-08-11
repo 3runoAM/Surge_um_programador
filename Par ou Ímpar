@@ -1,0 +1,9 @@
+numero = input('Digite um número inteiro e direi se ele é par ou ímpar: ')
+if numero.isnumeric():
+    numero = int(numero)
+    if numero % 2 == 0:
+        print(f'O número {numero} é par.')
+    else:
+        print(f'O número {numero} é ímpar.')
+else:
+    print(f'O número {numero} não é um inteiro')
