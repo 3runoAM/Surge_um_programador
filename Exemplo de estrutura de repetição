@@ -1,0 +1,17 @@
+frase = 'Mickaelly'
+mod_frase = ''
+
+for letra in frase:
+    if letra == 'c':
+        continue
+        mod_frase += letra.upper()
+    elif letra == 'M':
+        mod_frase += letra.lower()
+    elif letra == 'e':
+        mod_frase += letra.upper()
+    elif letra == 'k':
+        break
+        mod_frase += letra.lower()
+    elif letra == 'e:
+        mod_frase += letra.lower()
+print(mod_frase)
