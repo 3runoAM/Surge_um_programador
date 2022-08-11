@@ -1,0 +1,28 @@
+def velocidade(espaco, tempo):
+    calculo = espaco / tempo
+    print(f'Velocidade: {calculo} m/s')
+
+
+velocidade(500, 20)
+# Uma função também pode ser criada sem parâmetros:
+def mensagem():
+    print('Olá.')
+
+
+mensagem()
+
+
+# E com parâmetros padrão, que irão ser considerados caso os parâmetors não sejam inseridos:
+def saudacao(texto='Olá', nome_usuario='Usuário'):
+    print(texto, nome_usuario)
+
+
+saudacao()
+
+
+# Podemos usar parâmetros nomeados ao especificar qual está sendo adicionada.
+def first_letters(letra1, letra2, letra3):
+    print(letra1, letra2, letra3)
+
+
+first_letters(letra3='C', letra1='A', letra2='B')
